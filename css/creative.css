@@ -51,7 +51,7 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 10px 0; }
 
 .section-heading {
   margin-top: 0; }
@@ -173,8 +173,21 @@ header.masthead {
     header.masthead h1{
       padding: 40px 0 0 0;
       font-weight: 600;
+      font-size: 56px;
       color: rgba(70, 74, 76, 0.8);
       text-shadow: -3px 3px 4px rgba(150, 150, 150, 1);
+    }
+    .languages{
+      float: left;
+      padding-left: 20px;
+    }
+    .languages a{
+      cursor: pointer;
+      display: inline-block;
+      color: #ccc;
+    }
+    .active-languages{
+      border-bottom: 1px solid #ccc;
     }
 .logo{
     position: absolute;
@@ -228,13 +241,32 @@ header.masthead {
             margin-left: auto; } }
 
 .service-box {
+  background: rgba(0, 152, 215, 0.2);
   max-width: 400px;
-  margin: 50px auto 0; }
+  margin: 50px auto 0; 
+  position: relative;
+  padding: 20px;
+  }
+  .service-box .btn .btn-primary{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .service-box:hover{
+    -webkit-box-shadow: 3px 3px 16px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 16px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 16px 0px rgba(50, 50, 50, 0.75);
+  }
+  .modal .fade{
+    
+  }
   @media (min-width: 992px) {
     .service-box {
       margin: 20px auto 0; } }
   .service-box p {
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
 
 .portfolio-box {
   position: relative;
@@ -381,3 +413,16 @@ header.masthead {
   padding: 15px 30px; 
   text-shadow: 1px 1px 2px rgba(38, 38, 38, 1);
 }
+
+
+.more_link{
+  
+}
+.mobile_content{
+  height: 2px;
+  overflow: hidden;
+}
+
+
+
+
