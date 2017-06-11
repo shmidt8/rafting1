@@ -161,6 +161,12 @@ header.masthead {
     height: 100%;
     background: url(../img/right.png) 0 0 no-repeat;
   }
+   @media (max-width: 1200px){
+     header.masthead::before,
+     header.masthead::after{
+       display: none;
+     }
+   }
  header.masthead::after{
     content: "";
     position: absolute;
@@ -190,8 +196,10 @@ header.masthead {
       border-bottom: 1px solid #ccc;
     }
 .logo{
+    font-family: "untitled-font-1";
     position: absolute;
     display: block;
+    font-size: 50px;
     top: 35%;
     left: 42%;
     text-align: center;
